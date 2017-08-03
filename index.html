@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Apem</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav class="nav-extended nav-center" role="navigation">
+          <div class="nav-wrapper hide-on-large-only">
+            <a href="#" class="brand-logo center hide-on-large-only"><img class="movil-logo" src="assets/logo2.png" alt=""></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <ul class="side-nav" id="mobile-demo" style="transform: translateX(0px)">
+              <li><a class="active" id="inicio">Inicio</a></li>
+              <li><a>Colegios</a></li>
+              <li><a>Galeria</a></li>
+              <li><a>Calendario</a></li>
+              <li><a>Contacto</a></li>
+           </ul>
+         </div>
+
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent hide-on-med-and-down">
+              <a href=""><img id="logo-navbar" src="assets/logo2.png" alt=""></a>
+              <li class="tab"><a href="#" target="_self">Inicio</a></li>
+              <li class="tab"><a href="src/cole.html " target="_self">Colegios</a></li>
+              <li class="tab"><a href="#galeri-div">Galeria</a></li>
+              <li class="tab"><a id="contacto">Calendario</a></li>
+              <li class="tab"><a id="calendario">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="page-content">
+      <div class="logo-flotante">
+        <h1 class="titulo">APEM JALISCO</h1>
+        <h4 class="white-text center">Noble-Justo-Grande</h4>
+      </div>
+      
+      <div class="">
+      <div class="parallax-container">
+        <div class="parallax hide-on-med-and-down"><img src="assets/img-2.jpg"></div>
+        <div class="hide-on-large-only">
+          <img src="assets/img-2.jpg" alt="">
+        </div>
+      </div>
+      <div class="section white">
+        <div class="row">
+          <div class="container">
+            <h2 class="header center">Asociacion de Profesionistas y Empresarios de Mexico.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="row">
+            <div class="col s12 offset-m3 m6 offset-l4 l4" style="text-align:center">
+            <i class="large material-icons">format_quote</i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum magni quasi, expedita veritatis eum quisquam.</p>
+            </div>
+            </div>
+           <div id="galeri-div" class="row">
+              <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-3.jpg" alt="">
+               </div>
+              <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-4.jpg" alt="">
+               </div>              
+               <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-5.jpg" alt="">
+               </div>              
+               <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-6.jpg" alt="">
+               </div>              
+               <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-7.jpg" alt="">
+               </div>              
+               <div class="col s12 m6 l4" style="padding:0">
+                <img class="materialboxed width" src="assets/img-8.jpg" alt="">
+               </div>
+           </div>
+        </div>
+      </div>
+      
+      <div class="section white">
+        <div class="row container">
+          <h2 class="header center">Asociacion de Profesionistas y Empresarios de Mexico.</h2>
+         <div class="row" style="margin-top: 2em">
+            <div class="col s12 m6 l4" style="text-align:center">
+              <img class="img-icon" src="assets/newspaper.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut similique voluptas quod aut atque.</p>
+            </div>
+            <div class="col s12 m6 l4" style="text-align:center">
+             <img class="img-icon" src="assets/globe.png" alt="">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut similique voluptas quod aut atque.</p>
+             </div>
+            <div class="col s12 offset-m3 m6 l4" style="text-align:center">
+              <img class="img-icon" src="assets/network-1.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut similique voluptas quod aut atque.</p>
+            </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="assets/img-1.jpg"></div>
+      </div>
+
+
+
+      <div id="formulario-contacto" class="section">
+        <div class="container form-cont center">
+          <h2>Contacto</h2>
+          <form class="" action="back.php" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="nombre" id="nombre" type="text" class="validate">
+                <label class="active" for="nombre">Nombre</label>
+              </div>
+           </div>
+           <div class="row">
+              <div class="input-field col s6">
+                <input name="telefono" placeholder="Numero"id="telefono" type="number" class="validate">
+                <label class="active" for="telefono">Telefono</label>
+              </div>
+            </div>
+            <div class="row">
+               <div class="input-field col s6">
+                 <input name="email" placeholder="email"id="email" type="text" class="validate">
+                 <label class="active" for="email">Email</label>
+               </div>
+             </div>
+             <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea name="texto" id="texto" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Mensaje</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="assets/hombre.webp"></div>
+      </div>
+    </div>
+  </div>
+    
+
+    <footer class="page-footer white black-text">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>Contactanos</h5>
+              <p>You can use rows and columns here to organize your footer content.</p>
+          </div>
+            <div class="col l4 offset-l2 s12">
+              <ul>
+                  <li><a class="fa fa-facebook" style="font-size: 40px; color:#1A5276;" href="https://www.facebook.com/pg/apemjalisco/about/?ref=page_internal"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="footer-copyright black-text">
+            <div class="container">
+              © 2014 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </body>
+</html>
