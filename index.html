@@ -22,22 +22,22 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <ul class="side-nav" id="mobile-demo" style="transform: translateX(0px)">
-              <li><a class="active" id="inicio">Inicio</a></li>
-              <li><a>Colegios</a></li>
-              <li><a>Galeria</a></li>
-              <li><a>Calendario</a></li>
-              <li><a>Contacto</a></li>
+              <li><a href="#" class="active" id="inicio">Inicio</a></li>
+              <li><a href="src/cole.html">Colegios</a></li>
+              <li><a href="">Galeria</a></li>
+              <li><a href="">Calendario</a></li>
+              <li><a href="">Contacto</a></li>
            </ul>
          </div>
 
           <div class="nav-content">
             <ul class="tabs tabs-transparent hide-on-med-and-down">
-              <a href=""><img id="logo-navbar" src="assets/logo2.png" alt=""></a>
+              <a href="#"><img id="logo-navbar" src="assets/logo2.png" alt=""></a>
               <li class="tab"><a href="#" target="_self">Inicio</a></li>
               <li class="tab"><a href="src/cole.html " target="_self">Colegios</a></li>
-              <li class="tab"><a href="#galeri-div">Galeria</a></li>
-              <li class="tab"><a id="contacto">Calendario</a></li>
-              <li class="tab"><a id="calendario">Contacto</a></li>
+              <li class="tab"><a href="#galeria" target="_self">Galeria</a></li>
+              <li class="tab"><a href="#calendario" target="_self">Calendario</a></li>
+              <li class="tab"><a href="#formulario-contacto" target="_self">Contacto</a></li>
             </ul>
           </div>
         </nav>
@@ -45,19 +45,19 @@
     </header>
 
     <div id="page-content">
-      <div class="logo-flotante">
+      <div class="logo-flotante hide-on-small-only">
         <h1 class="titulo">APEM JALISCO</h1>
         <h4 class="white-text center">Noble-Justo-Grande</h4>
       </div>
       
-      <div class="">
-      <div class="parallax-container">
-        <div class="parallax hide-on-med-and-down"><img src="assets/img-2.jpg"></div>
-        <div class="hide-on-large-only">
-          <img src="assets/img-2.jpg" alt="">
-        </div>
+    <div>
+      <div class="parallax-container hide-on-med-and-down">
+        <div class="parallax"><img src="assets/img-2.jpg"></div>
       </div>
-      <div class="section white">
+      <div class="hide-on-large-only">
+          <img class="mobile-img" src="assets/img-2.jpg" alt="">
+      </div>
+      <div  class="section white">
         <div class="row">
           <div class="container">
             <h2 class="header center">Asociacion de Profesionistas y Empresarios de Mexico.</h2>
@@ -69,7 +69,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum magni quasi, expedita veritatis eum quisquam.</p>
             </div>
             </div>
-           <div id="galeri-div" class="row">
+           <div class="row">
               <div class="col s12 m6 l4" style="padding:0">
                 <img class="materialboxed width" src="assets/img-3.jpg" alt="">
                </div>
@@ -112,8 +112,18 @@
         </div>
       </div>
 
-      <div class="parallax-container">
+      <div class="parallax-container hide-on-med-and-down">
         <div class="parallax"><img src="assets/img-1.jpg"></div>
+      </div>
+
+      
+      <div class="section white">
+        <div class="row container">
+          <h2 class="header center">Calendario de Actividades</h2>
+        <div class="responsiveCal">
+           <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;hl=es&amp;bgcolor=%23ffffff&amp;src=mhc3k0icrkrj9qd0ggspc58es0%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FMexico_City" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+       </div>
       </div>
 
 
@@ -123,58 +133,53 @@
           <h2>Contacto</h2>
           <form class="" action="back.php" method="post">
             <div class="row">
-              <div class="input-field col s6">
-                <input name="nombre" id="nombre" type="text" class="validate">
+              <div class="input-field col s12 m6">
+                <input name="nombre" placeholder="Nombre" id="nombre" type="text" class="validate">
                 <label class="active" for="nombre">Nombre</label>
               </div>
-           </div>
-           <div class="row">
-              <div class="input-field col s6">
+
+              <div class="input-field col s12 m6">
+                <input name="carrera" placeholder="Carrera" id="carrera" type="text" class="validate">
+                <label class="active" for="carrera">Carrera</label>
+              </div>
+          
+              <div class="input-field col s12 m6">
                 <input name="telefono" placeholder="Numero"id="telefono" type="number" class="validate">
                 <label class="active" for="telefono">Telefono</label>
               </div>
-            </div>
-            <div class="row">
-               <div class="input-field col s6">
+           
+            
+               <div class="input-field col s12 m6">
                  <input name="email" placeholder="email"id="email" type="text" class="validate">
                  <label class="active" for="email">Email</label>
                </div>
-             </div>
-             <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <textarea name="texto" id="texto" class="materialize-textarea"></textarea>
+           
+              <div class="input-field col s12 m12">
+                  <textarea name="texto" id="texto" class="materialize-textarea"></textarea>
                     <label for="textarea1">Mensaje</label>
                   </div>
-                </div>
-              </form>
-            </div>
-            <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
-              <i class="material-icons right">send</i>
-            </button>
-          </form>
+               </div>
+              <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+             </button>
         </div>
+       </div>
       </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="assets/hombre.webp"></div>
+      <div class="parallax-container hide-on-med-and-down">
+        <div class="parallax"><img src="assets/img-9.jpg"></div>
       </div>
     </div>
-  </div>
     
 
-    <footer class="page-footer white black-text">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5>Contactanos</h5>
-              <p>You can use rows and columns here to organize your footer content.</p>
+          <div style="text-align:center" class="col s12 offset-m3 m6 offset-l3 l6">
+            <h2 style="font-size:30px">Nuestra vida tiene un solo sentido, Adelante!.</h2><br>
+            <a class="fa fa-facebook" style="font-size: 30px; color:#fff;" href="https://www.facebook.com/pg/apemjalisco/about/?ref=page_internal"></a>
           </div>
-            <div class="col l4 offset-l2 s12">
-              <ul>
-                  <li><a class="fa fa-facebook" style="font-size: 40px; color:#1A5276;" href="https://www.facebook.com/pg/apemjalisco/about/?ref=page_internal"></a></li>
-              </ul>
-            </div>
+            
+            
           </div>
         </div>
           <div class="footer-copyright black-text">
